@@ -21382,10 +21382,7 @@ I2C</description>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
@@ -21396,6 +21393,9 @@ I2C</description>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21701,17 +21701,8 @@ I2C</description>
 <instance part="GND25" gate="1" x="81.28" y="93.98" smashed="yes">
 <attribute name="VALUE" x="78.74" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="GND26" gate="1" x="63.5" y="109.22" smashed="yes">
-<attribute name="VALUE" x="60.96" y="106.68" size="1.778" layer="96"/>
-</instance>
 <instance part="GND27" gate="1" x="175.26" y="162.56" smashed="yes">
 <attribute name="VALUE" x="172.72" y="160.02" size="1.778" layer="96"/>
-</instance>
-<instance part="GND28" gate="1" x="160.02" y="177.8" smashed="yes">
-<attribute name="VALUE" x="157.48" y="175.26" size="1.778" layer="96"/>
-</instance>
-<instance part="GND29" gate="1" x="106.68" y="83.82" smashed="yes">
-<attribute name="VALUE" x="104.14" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="P+3" gate="VCC" x="187.96" y="20.32" smashed="yes">
 <attribute name="VALUE" x="185.42" y="17.78" size="1.778" layer="96" rot="R90"/>
@@ -21745,6 +21736,15 @@ I2C</description>
 </instance>
 <instance part="GND20" gate="1" x="121.92" y="185.42" smashed="yes">
 <attribute name="VALUE" x="119.38" y="182.88" size="1.778" layer="96"/>
+</instance>
+<instance part="P+21" gate="VCC" x="66.04" y="114.3" smashed="yes">
+<attribute name="VALUE" x="63.5" y="111.76" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+22" gate="VCC" x="106.68" y="88.9" smashed="yes">
+<attribute name="VALUE" x="104.14" y="86.36" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+23" gate="VCC" x="160.02" y="182.88" smashed="yes">
+<attribute name="VALUE" x="157.48" y="180.34" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -21933,25 +21933,9 @@ I2C</description>
 <wire x1="111.76" y1="71.12" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SR2A" gate="A" pin="SCL"/>
-<wire x1="81.28" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-<label x="68.58" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SR1" gate="A" pin="G"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="175.26" y1="165.1" x2="177.8" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SR1" gate="A" pin="SCL"/>
-<wire x1="177.8" y1="180.34" x2="160.02" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="GND28" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SR2B" gate="A" pin="SCL"/>
-<pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="111.76" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -22323,6 +22307,22 @@ I2C</description>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="P+20" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SR2A" gate="A" pin="SCL"/>
+<wire x1="81.28" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+<label x="68.58" y="111.76" size="1.778" layer="95"/>
+<pinref part="P+21" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SR2B" gate="A" pin="SCL"/>
+<wire x1="111.76" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="P+22" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SR1" gate="A" pin="SCL"/>
+<wire x1="177.8" y1="180.34" x2="160.02" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="P+23" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="N$13" class="0">
