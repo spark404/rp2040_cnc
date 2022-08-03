@@ -21740,8 +21740,8 @@ I2C</description>
 <instance part="P+21" gate="VCC" x="66.04" y="114.3" smashed="yes">
 <attribute name="VALUE" x="63.5" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+22" gate="VCC" x="106.68" y="88.9" smashed="yes">
-<attribute name="VALUE" x="104.14" y="86.36" size="1.778" layer="96" rot="R90"/>
+<instance part="P+22" gate="VCC" x="73.66" y="88.9" smashed="yes">
+<attribute name="VALUE" x="71.12" y="86.36" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+23" gate="VCC" x="160.02" y="182.88" smashed="yes">
 <attribute name="VALUE" x="157.48" y="180.34" size="1.778" layer="96" rot="R90"/>
@@ -22316,7 +22316,7 @@ I2C</description>
 </segment>
 <segment>
 <pinref part="SR2B" gate="A" pin="SCL"/>
-<wire x1="111.76" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="P+22" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -22325,7 +22325,7 @@ I2C</description>
 <pinref part="P+23" gate="VCC" pin="VCC"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="M0-X" class="0">
 <segment>
 <pinref part="JP2" gate="-3" pin="2"/>
 <pinref part="IC2" gate="G$1" pin="M0"/>
@@ -22333,7 +22333,7 @@ I2C</description>
 <wire x1="271.78" y1="185.42" x2="292.1" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="M1-X" class="0">
 <segment>
 <pinref part="JP2" gate="-2" pin="2"/>
 <pinref part="IC2" gate="G$1" pin="M1"/>
@@ -22341,7 +22341,7 @@ I2C</description>
 <wire x1="261.62" y1="182.88" x2="292.1" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="M2-X" class="0">
 <segment>
 <pinref part="JP2" gate="-1" pin="2"/>
 <pinref part="IC2" gate="G$1" pin="M2"/>
